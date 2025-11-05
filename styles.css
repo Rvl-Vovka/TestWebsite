@@ -4,15 +4,15 @@ html {
 }
 @font-face {
     font-family: "XTypewriter-Regular";
-    src: url(https://github.com/Rvl-Vovka/TestWebsite/blob/main/XTypewriter-Regular.otf) format("truetype");
+    src: url(XTypewriter-Regular.otf) format("truetype");
 }
 @font-face {
     font-family: "JetBrainsMonoNL-SemiBoldItalic";
-    src: url(file:///C:/Users/vlryz/AppData/Local/Microsoft/Windows/Fonts/JetBrainsMonoNL-SemiBoldItalic.ttf);
+    src: url(JetBrainsMonoNL-SemiBoldItalic.ttf);
 }
 @font-face {
     font-family: "JetBrainsMono-ExtraBoldItalic";
-    src: url(file:///C:/Users/vlryz/AppData/Local/Microsoft/Windows/Fonts/JetBrainsMono-ExtraBoldItalic.ttf);
+    src: url(JetBrainsMono-ExtraBoldItalic.ttf);
 }
 body{
     background-color: #f9f5e9;
@@ -145,5 +145,4 @@ h1{
 }
 details{
     font-family: "JetBrainsMonoNL-SemiBoldItalic";
-
 }
