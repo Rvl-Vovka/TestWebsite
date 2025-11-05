@@ -12,7 +12,7 @@ html {
 }
 @font-face {
     font-family: "JetBrainsMono-ExtraBoldItalic";
-    src: url(JetBrainsMono-ExtraBoldItalic.ttf);
+    src: url(JetBrainsMonoNL-ExtraBoldItalic.ttf);
 }
 body{
     background-color: #f9f5e9;
@@ -146,3 +146,4 @@ h1{
 details{
     font-family: "JetBrainsMonoNL-SemiBoldItalic";
 }
+
