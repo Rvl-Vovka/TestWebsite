@@ -151,6 +151,10 @@ h1{
 details{
     font-family: "JetBrainsMonoNL-SemiBoldItalic";
 }
+h3{
+    text-align: center;
+    font-size: 2vw;
+}
 @media (max-width: 767px) {
     p{
         font-size: 1.5vh;
@@ -158,6 +162,9 @@ details{
     }
     h2{
         font-size: 2.4vh;
+    }
+    h3{
+        font-size: 2.1vh;
     }
     summary{
         font-size: 1.5vh;
