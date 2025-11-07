@@ -1,212 +1,78 @@
+function DisableEverything(){
+    const NavBarBeginning = document.getElementById("NavBarBeginning");
+    NavBarBeginning.classList.remove('active');
+    NavBarBeginning.classList.add('inactive');
+    const NavBarEducation = document.getElementById("NavBarEducation");
+    NavBarEducation.classList.remove('active');
+    NavBarEducation.classList.add('inactive');
+    const NavBarMedicine = document.getElementById("NavBarMedicine");
+    NavBarMedicine.classList.remove('active');
+    NavBarMedicine.classList.add('inactive');
+    const NavBarIndustry = document.getElementById("NavBarIndustry");
+    NavBarIndustry.classList.remove('active');
+    NavBarIndustry.classList.add('inactive');
+    const NavBarAgriculture = document.getElementById("NavBarAgriculture");
+    NavBarAgriculture.classList.remove('active');
+    NavBarAgriculture.classList.add('inactive');
+    const NavBarCulture = document.getElementById("NavBarCulture");
+    NavBarCulture.classList.remove('active');
+    NavBarCulture.classList.add('inactive');
+    const NavBarBoring = document.getElementById("NavBarBoring");
+    NavBarBoring.classList.remove('active');
+    NavBarBoring.classList.add('inactive');
+    const NavBarSuggestions = document.getElementById("NavBarSuggestions");
+    NavBarSuggestions.classList.remove('active');
+    NavBarSuggestions.classList.add('inactive');
+}
 document.addEventListener('scroll', function() {
     const Width = document.documentElement.clientWidth
     const ScrollDistance = Width*0.06
     if(suggestions.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
+        DisableEverything()
+        const element = document.getElementById("NavBarSuggestions");
         element.classList.remove('inactive');
         element.classList.add('active');
     }
     else if(boring.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
+        DisableEverything()
+        const element = document.getElementById("NavBarBoring");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
     else if(culture.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
+        DisableEverything()
+        const element = document.getElementById("NavBarCulture");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
     else if(agriculture.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
+        DisableEverything()
+        const element = document.getElementById("NavBarAgriculture");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
     else if(industry.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
+        DisableEverything()
+        const element = document.getElementById("NavBarIndustry");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
     else if(medicine.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
+        DisableEverything()
+        const element = document.getElementById("NavBarMedicine");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
     else if(education.getBoundingClientRect().y<ScrollDistance){
-        element = document.getElementById("NavBarBeginning");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarEducation");
+        DisableEverything()
+        const element = document.getElementById("NavBarEducation");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
     else{
-        element = document.getElementById("NavBarBeginning");
+        DisableEverything()
+        const element = document.getElementById("NavBarBeginning");
         element.classList.remove('inactive');
         element.classList.add('active');
-        element = document.getElementById("NavBarEducation");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarMedicine");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarIndustry");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarAgriculture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarCulture");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarBoring");
-        element.classList.remove('active');
-        element.classList.add('inactive');
-        element = document.getElementById("NavBarSuggestions");
-        element.classList.remove('active');
-        element.classList.add('inactive');
     }
 });
