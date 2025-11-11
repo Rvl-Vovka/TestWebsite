@@ -1,14 +1,14 @@
 @font-face {
+    font-family: "Oswald";
+    src: url(Oswald.woff2);
+}
+@font-face {
     font-family: "XTypewriter";
-    src: url(XTypewriter-Regular.otf) format('opentype');
+    src: url(XTypewriter.woff2);
 }
 @font-face {
     font-family: "JetBrains";
-    src: url(JetBrainsMonoNL-ExtraBoldItalic.ttf) format('truetype');
-}
-@font-face {
-    font-family: "Oswald";
-    src: url(Oswald.ttf) format('truetype');
+    src: url(JetBrainsMonoNL-ExtraBoldItalic.woff2);
 }
 
 html {
