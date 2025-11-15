@@ -532,6 +532,56 @@ td{
     width: 16vw;
     height: 12vw;
 }
+.suggestion1_image1{
+    width: 16.5vw;
+    height: 22vw;
+}
+.suggestion1_image2{
+    margin-left: 1vw;
+    width: 44vw;
+    height: 22vw;
+}
+.suggestion1_image3{
+    margin-left: 1vw;
+    width: 22vw;
+    height: 22vw;
+}
+.suggestion2_image1{
+    width: 28vw;
+    height: 21vw;
+}
+.suggestion2_image2{
+    margin-left: 1vw;
+    width: 28vw;
+    height: 21vw;
+}
+.suggestion2_image3{
+    margin-left: 1vw;
+    width: 28vw;
+    height: 21vw;
+}
+.suggestion3_image1{
+    width: 42vw;
+    height: 28vw;
+}
+.suggestion3_image2{
+    margin-left: 1vw;
+    width: 42vw;
+    height: 28vw;
+}
+.suggestion4_image1{
+    width: 40vw;
+    height: 30vw;
+}
+.suggestion4_image2{
+    margin-left: 1vw;
+    width: 40vw;
+    height: 30vw;
+}
+
+.suggestion_images{
+    text-align: center;
+}
 
 @media (max-width: 767px) {
     p{
