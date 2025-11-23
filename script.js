@@ -17,9 +17,9 @@ function DisableEverything(){
     const NavBarCulture = document.getElementById("NavBarCulture");
     NavBarCulture.classList.remove('active');
     NavBarCulture.classList.add('inactive');
-    const NavBarBoring = document.getElementById("NavBarBoring");
-    NavBarBoring.classList.remove('active');
-    NavBarBoring.classList.add('inactive');
+    const NavBarSport = document.getElementById("NavBarSport");
+    NavBarSport.classList.remove('active');
+    NavBarSport.classList.add('inactive');
     const NavBarSuggestions = document.getElementById("NavBarSuggestions");
     NavBarSuggestions.classList.remove('active');
     NavBarSuggestions.classList.add('inactive');
@@ -33,9 +33,9 @@ document.addEventListener('scroll', function() {
         element.classList.remove('inactive');
         element.classList.add('active');
     }
-    else if(boring.getBoundingClientRect().y<ScrollDistance){
+    else if(sport.getBoundingClientRect().y<ScrollDistance){
         DisableEverything()
-        const element = document.getElementById("NavBarBoring");
+        const element = document.getElementById("NavBarSport");
         element.classList.remove('inactive');
         element.classList.add('active');
     }
