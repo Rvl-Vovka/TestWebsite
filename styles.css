@@ -79,6 +79,10 @@ p{
     text-align: justify;
     text-indent: 6vw;
 }
+span {
+    display: inline-block;
+    width: 6vw;
+}
 .FirstChapter{
     margin-top: 5vw;
 }
