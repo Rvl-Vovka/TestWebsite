@@ -54,14 +54,14 @@ body{
 }
 
 h1{
-    background: linear-gradient(to right, darkred, red, red, green, green);
+    background: linear-gradient(to right, darkred, darkred, darkred, #CC0000, #DD0000, #DD0000, #FF0000, #FF0000, #00AA00, #00AA00, #009900, #009900, darkgreen, darkgreen, darkgreen, darkgreen);
     background-clip: content-box;
     -moz-background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 3vw;
-    margin-top: 6vw;
+    margin-top: 5vw;
 }
 h2{
     text-align: center;
@@ -72,14 +72,14 @@ h3{
     font-size: 2vw;
 }
 p{
-    margin-left: 6vw;
-    margin-right: 6vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     font-size: 1.5625vw;
     line-height: 2.1875vw;
     text-align: justify;
     text-indent: 6vw;
 }
-span {
+em {
     display: inline-block;
     width: 6vw;
 }
@@ -96,7 +96,7 @@ details{
     font-family: "JetBrains";
 }
 summary{
-    margin-left: 6vw;
+    margin-left: 5vw;
     font-size: 1.5625vw;
 }
 .table-container {
@@ -104,23 +104,39 @@ summary{
     justify-content: center;
 }
 table {
-    margin-left: 6vw;
-    margin-right: 6vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
     border-collapse: collapse;
     table-layout: fixed;
-    width: 88vw;
+    width: 90vw;
 }
 th{
     border: 0.0625vw solid #ccc;
-    padding: 0.5vw;
+    border-spacing: 0;
     font-size: 2vw;
     text-align: center;
 }
-td{
+.cell-content{
     border: 0.0625vw solid #ccc;
-    padding: 0.5vw;
+    border-spacing: 0;
     text-align: center;
     font-size: 1.375vw;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Pushes top and bottom content to the edges */
+    padding: 0.5vw;
+}
+.empty{
+    border: none;
+    width: 0px;
+}
+span{
+    text-align: center;
+    justify-content: center;
+    height: 100%; /* Important to make content use full height of cell */
+}
+.image-container {
+  align-self: center;
 }
 
 h4{
@@ -151,445 +167,431 @@ h4{
 }
 
 .table1_text1_image1{
-    width: 24vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text1_image2{
     margin-left: 1vw;
-    width: 12vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text1_image3{
-    width: 21vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text1_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text2_image1{
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text2_image2{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text2_image3{
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text2_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text3_image1{
-    width: 20vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text3_image2{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text3_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text3_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text4_image1{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text4_image2{
     margin-left: 1vw;
-    width: 15vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text4_image3{
-    width: 16vw;
+    width: auto;
     height: 10vw;
 }
 .table1_text4_image4{
     margin-left: 1vw;
-    width: 20vw;
+    width: auto;
     height: 10vw;
 }
 .table1_text5_image1{
-    width: 20vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text5_image2{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text5_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text5_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text6_image1{
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text6_image2{
     margin-left: 1vw;
-    width: 15vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text6_image3{
-    width: 20vw;
+    width: auto;
     height: 12vw;
 }
 .table1_text6_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text1_image1{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text1_image2{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text1_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text1_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text2_image1{
-    width: 18vw;
-    height: 12vw;
+    width: auto;
+    height: 11.5vw;
 }
 .table2_text2_image2{
     margin-left: 1vw;
-    width: 19.2vw;
-    height: 12vw;
+    width: auto;
+    height: 11.5vw;
 }
 .table2_text2_image3{
-    width: 14vw;
+    width: auto;
     height: 14vw;
 }
 .table2_text2_image4{
     margin-left: 1vw;
-    width: 21vw;
+    width: auto;
     height: 14vw;
 }
 .table2_text3_image1{
-    width: 15vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text3_image2{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text3_image3{
-    width: 14vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text3_image4{
     margin-left: 1vw;
-    width: 22.5vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text4_image1{
-    width: 22.5vw;
+    width: auto;
     height: 18vw;
 }
 .table2_text4_image2{
     margin-left: 1vw;
-    width: 12vw;
+    width: auto;
     height: 18vw;
 }
 .table2_text4_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table2_text4_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text1_image1{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text1_image2{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text1_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text1_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text2_image1{
-    width: 19vw;
+    width: auto;
     height: 11vw;
 }
 .table3_text2_image2{
     margin-left: 1vw;
-    width: 17vw;
+    width: auto;
     height: 11vw;
 }
 .table3_text2_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text2_image4{
     margin-left: 1vw;
-    width: 19.5vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text3_image1{
-    width: 16vw;
-    height: 12w;
+    width: auto;
+    height: 12vw;
 }
 .table3_text3_image2{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text3_image3{
-    width: 16.8vw;
+    width: auto;
     height: 12vw;
 }
 .table3_text3_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table4_text1_image1{
-    width: 20.5vw;
+    width: auto;
     height: 9vw;
 }
 .table4_text1_image2{
     margin-left: 1vw;
-    width: 11.25vw;
+    width: auto;
     height: 9vw;
 }
 .table4_text1_image3{
-    width: 13.5vw;
+    width: auto;
     height: 9vw;
 }
 .table4_text1_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 9vw;
 }
 .table4_text2_image1{
-    width: 16vw;
-    height: 12vw;
+    width: auto;
+    height: 11vw;
 }
 .table4_text2_image2{
     margin-left: 1vw;
-    width: 21vw;
-    height: 12vw;
+    width: auto;
+    height: 11vw;
 }
 .table4_text2_image3{
-    width: 13vw;
+    width: auto;
     height: 12vw;
 }
 .table4_text2_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table4_text3_image1{
-    width: 18vw;
+    width: auto;
     height: 13.5vw;
 }
 .table4_text3_image2{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 13.5vw;
 }
 .table4_text3_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table4_text3_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text1_image1{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text1_image2{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text1_image3{
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text1_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text2_image1{
-    width: 13vw;
+    width: auto;
     height: 15vw;
 }
 .table5_text2_image2{
     margin-left: 1vw;
-    width: 20vw;
+    width: auto;
     height: 15vw;
 }
 .table5_text2_image3{
-    width: 23vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text2_image4{
     margin-left: 1vw;
-    width: 9vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text3_image1{
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text3_image2{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text3_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table5_text3_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table6_text1_image1{
-    width: 19.5vw;
+    width: auto;
     height: 11vw;
 }
 .table6_text1_image2{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 11vw;
 }
 .table6_text1_image3{
-    width: 16vw;
+    width: auto;
     height: 8vw;
 }
 .table6_text1_image4{
     margin-left: 1vw;
-    width: 19vw;
+    width: auto;
     height: 8vw;
 }
 .table6_text2_image1{
-    width: 19vw;
+    width: auto;
     height: 12vw;
 }
 .table6_text2_image2{
     margin-left: 1vw;
-    width: 19.5vw;
+    width: auto;
     height: 12vw;
 }
 .table6_text2_image3{
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .table6_text2_image4{
     margin-left: 1vw;
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table6_text3_image1{
-    width: 21vw;
+    width: auto;
     height: 14vw;
 }
 .table6_text3_image2{
     margin-left: 1vw;
-    width: 14vw;
+    width: auto;
     height: 14vw;
 }
 .table6_text3_image3{
-    width: 18vw;
+    width: auto;
     height: 12vw;
 }
 .table6_text3_image4{
     margin-left: 1vw;
-    width: 16vw;
+    width: auto;
     height: 12vw;
 }
 .suggestion1_image1{
-    width: 16.5vw;
+    width: auto;
     height: 22vw;
 }
 .suggestion1_image2{
     margin-left: 1vw;
-    width: 44vw;
+    width: auto;
     height: 22vw;
 }
 .suggestion1_image3{
     margin-left: 1vw;
-    width: 22vw;
+    width: auto;
     height: 22vw;
 }
 .suggestion2_image1{
-    width: 28vw;
-    height: 21vw;
+    width: auto;
+    height: 28vw;
 }
 .suggestion2_image2{
     margin-left: 1vw;
-    width: 28vw;
-    height: 21vw;
-}
-.suggestion2_image3{
-    margin-left: 1vw;
-    width: 28vw;
-    height: 21vw;
+    width: auto;
+    height: 28vw;
 }
 .suggestion3_image1{
-    width: 42vw;
-    height: 28vw;
+    width: auto;
+    height: 30vw;
 }
 .suggestion3_image2{
     margin-left: 1vw;
-    width: 42vw;
-    height: 28vw;
-}
-.suggestion4_image1{
-    width: 40vw;
-    height: 30vw;
-}
-.suggestion4_image2{
-    margin-left: 1vw;
-    width: 40vw;
+    width: auto;
     height: 30vw;
 }
 
